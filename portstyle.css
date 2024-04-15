@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+}
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(intraa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.links {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: rgb(12, 135, 243);
+}
+.links h1 {
+    font-size: 50px;
+    margin-top: 95px;
+}
+.links p {
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.links h2 {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+	border-radius: 50px;
+    background-color: bisque;
+}
+.links h2 a {
+    text-decoration: none;
+    color: rgb(7, 15, 22);
+}
+.links h2::after {
+    content: '';
+    height: 5px;
+    width: 0;
+    background: #88bae9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.links h2:hover::after {
+    width: 100%;
+}
+.home:link, .home:visited {
+    background-color: rgb(199, 234, 248);
+    color: rgb(0, 0, 0);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .home:hover, .home:active {
+      background-color: rgb(90, 182, 185);
+  }

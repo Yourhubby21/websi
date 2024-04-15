@@ -1,0 +1,36 @@
+* {
+    margin:auto;
+    padding:0%;
+    background-color: rgb(149, 203, 250);
+}
+.cont h1 {
+    font-size: 45px;
+    color: rgb(4, 69, 131);
+    margin-left: 55px;
+    margin-top: 50px;
+}
+.cont h2{
+    font-size: 30px;
+    margin-left: 55px;
+    color: rgb(67, 5, 192);
+}
+.cont p {
+    margin: 30px auto;
+    margin-left: 70px;
+    margin-right: 65px;
+    font-weight: 100;
+    line-height: 25px;
+    color: rgb(13, 27, 53);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+.home:link, .home:visited {
+    background-color: rgb(199, 234, 248);
+    color: rgb(0, 0, 0);
+    padding: 5px 5px;
+    text-align:center; display: block;
+}
+.home:hover, .home:active {
+      background-color: rgb(90, 182, 185);
+}

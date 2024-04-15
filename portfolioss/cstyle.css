@@ -1,0 +1,36 @@
+h1 {
+	text-align: center;
+	padding: 10px;
+	background-color: #0ABAB5;
+	}
+	.cont {
+		text-align:center;
+		box-shadow: 2px 2px 2px 2px;
+	}
+	.holiday {
+	cursor:pointer;
+	background-color: #96CAFD;
+	}
+	.birthday {
+	cursor:pointer;
+	background-color:#FFDF00; 
+	}
+	.holiday:hover::after {
+	content: attr(title);
+	position: absolute;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	}
+	.birthday:hover::after {
+	content: attr(title);
+	position: absolute;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 5px;
+	background-color:black;
+	color: white;
+	}
+	

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey/Quiz Form</title>
+    <style>
+        body {
+            font-family: Arial, Monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #1C115B;
+        }
+        .cont {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #7CCFF2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	
+		}
+        
+        h1 {
+            text-align: center;
+        }
+		h2{
+			text-align: center;
+		}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+			font-weight: bold;
+        }
+		input[type="radio"] {
+            margin-top: 15px;
+		}
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>Survey/Quiz Form</h1>
+        <form action="#" method="post">
+		<label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+		<label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="female">Female</option>
+			<option value="male">Male</option>
+			
+        <h2>Questions</h2>
+            <label for="num3">1. What is your favorite color?</label><br>
+            <input type="radio" id="num1_opt1" name="num1" value="opt1">
+            <label for="num1_opt1">Sky Blue</label><br>
+            <input type="radio" id="num1_opt2" name="num1" value="opt2">
+            <label for="num1_opt2">Purple</label><br>
+            <input type="radio" id="num1_opt3" name="num1" value="opt3">
+            <label for="num1_opt3">Maroon</label><br>
+            <input type="radio" id="num1_opt4" name="num1" value="opt4">
+            <label for="num1_opt4">Yellow</label><br><br>
+			
+            <label for="num2">2. What makes you happy?</label><br>
+			<input type="radio" id="num2_opt1" name="num2" value="opt1">
+            <label for="num2_opt1">Animals</label><br>
+			<input type="radio" id="num2_opt1" name="num2" value="opt2">
+            <label for="num2_opt2">Food</label><br>
+			<input type="radio" id="num2_opt1" name="num2" value="opt3">
+            <label for="num2_opt3">Family</label><br>
+			<input type="radio" id="num2_opt1" name="num2" value="opt4">
+            <label for="num2_opt4">Nature</label><br><br>
+           
+            <label for="num3">3. What genre do you prefer to watch?</label><br>
+            <input type="radio" id="num3_opt1" name="num3" value="opt1">
+            <label for="num3_opt1">Horror</label><br>
+            <input type="radio" id="num3_opt2" name="num3" value="opt2">
+            <label for="num3_opt2">Romance Comedy</label><br>
+            <input type="radio" id="num3_opt3" name="num3" value="opt3">
+            <label for="num3_opt3">Thriller</label><br>
+            <input type="radio" id="num3_opt4" name="num3" value="opt4">
+            <label for="num3_opt4">Action</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
